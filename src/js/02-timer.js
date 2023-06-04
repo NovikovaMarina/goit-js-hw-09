@@ -71,7 +71,7 @@ function convertMs(ms) {
 
     const seconds = Math.floor((((ms % day) % hour) % minute) / second);
   
-    return { days, hours, minutes, seconds };
+    return {days, hours, minutes, seconds} ;
   }
   
   console.log(convertMs(2000)); // {days: 0, hours: 0, minutes: 0, seconds: 2}
@@ -115,6 +115,8 @@ function startTimer() {
 function renderDate(formatDate) {
   secondsRef.textContent = formatDate.seconds;
   minutesRef.textContent = formatDate.minutes;
+  ":";
   hoursRef.textContent = formatDate.hours;
+  ":";
   daysRef.textContent = formatDate.days;
 }
