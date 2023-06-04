@@ -1,4 +1,4 @@
-import flatpickr from "./flatpickr";
+import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
@@ -114,7 +114,7 @@ function startTimer() {
 
 function renderDate(formatDate) {
   secondsRef.textContent = formatDate.seconds;
-  minutesRef.textContent = formatDate.minutes + ":";
-  hoursRef.textContent = formatDate.hours + ":";
-  daysRef.textContent = formatDate.days + ":";
+  minutesRef.textContent = formatDate.minutes;
+  hoursRef.textContent = formatDate.hours;
+  daysRef.textContent = formatDate.days;
 }
